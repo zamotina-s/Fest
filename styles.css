@@ -5,14 +5,14 @@
 }
 
 @font-face {
-    font-family: "MorfinSans";
-    src: url('./MorfinSans-Regular.woff') format('woff'),
-        url('./MorfinSans-Regular.ttf') format('truetype');
+    font-family: "Hero";
+    src: url('./Herolight.woff') format('woff');
 }
 
 @font-face {
-    font-family: "Hero";
-    src: url('./Herolight.woff') format('woff');
+    font-family: "MorfinSans";
+    src: url('./Morfin.woff') format('woff'),
+        url('./Morfin.ttf') format('truetype');
 }
 
 body {
