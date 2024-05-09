@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: "MorfinSans";
-    src: url('../../../../Downloads/MorfinSans-Regular.woff') format('woff'),
-        url('../../../../Downloads/MorfinSans-Regular.ttf') format('truetype');
+    src: url('./MorfinSans-Regular.woff') format('woff'),
+        url('./MorfinSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
