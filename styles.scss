@@ -5,17 +5,14 @@
 }
 
 @font-face {
-    font-family: 'Hero';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Hero'), url('https://fonts.cdnfonts.com/s/6766/hero.woff') format('woff');
+    font-family: "Hero";
+    src: url('./Herolight.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Hero Italic';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Hero Italic'), url('https://fonts.cdnfonts.com/s/6766/hero-italic.woff') format('woff');
+    font-family: "MorfinSans";
+    src: url('./Morfin.woff') format('woff'),
+        url('./Morfin.ttf') format('truetype');
 }
 
 body {
@@ -23,6 +20,8 @@ body {
     height: 2400px;
     background: black url('./bg.png') no-repeat;
     background-size: 100% auto;
+    overflow-x: hidden;
+    font-family: 'Hero';
 }
 
 header {
