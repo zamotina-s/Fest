@@ -1,0 +1,231 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+@font-face {
+  font-family: "Hero";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Hero"), url("https://fonts.cdnfonts.com/s/6766/hero.woff") format("woff");
+}
+@font-face {
+  font-family: "Hero Italic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Hero Italic"), url("https://fonts.cdnfonts.com/s/6766/hero-italic.woff") format("woff");
+}
+body {
+  width: 100%;
+  height: 2400px;
+  background: black url("./bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+header {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 644px;
+  height: 62px;
+  display: flex;
+  gap: 56px;
+  color: white;
+  font-family: "Arial";
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border: 2px solid #8166FF;
+  border-radius: 20px;
+}
+
+.registration {
+  height: 62px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border: 2px solid #8166FF;
+  border-radius: 20px;
+  padding: 12px;
+}
+.registration:hover {
+  cursor: pointer;
+}
+
+.person {
+  color: white;
+  margin-top: 140px;
+  padding: 0 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.person__header {
+  display: flex;
+  justify-content: space-between;
+}
+.person__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.person__photo {
+  border-radius: 20px;
+}
+.person__info {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  height: 260px;
+  border-radius: 20px;
+  backdrop-filter: blur(40px);
+}
+.person__info__main {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.person__info__desc {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.person__about {
+  display: flex;
+  gap: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 70vw;
+  padding-right: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 120px;
+}
+.person__about__badge {
+  margin-left: -180px;
+  padding: 32px;
+  text-wrap: nowrap;
+  border-radius: 20px;
+  background-color: #8166FF;
+  font-size: 52px;
+  font-weight: 400;
+}
+.person__about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.empty {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+.speakers {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(transparent 0%, #7e65fb 50%, transparent 100%);
+  color: white;
+}
+.speakers__photos {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  gap: 32px;
+}
+.speakers__button {
+  margin-top: 20px;
+  align-self: flex-end;
+  border-radius: 20px;
+  padding: 16px 20px;
+  background-color: #8166FF;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 160px;
+}
+
+.contacts__container {
+  color: white;
+  padding: 160px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contacts__left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contacts__button {
+  padding: 16px;
+  width: fit-content;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border: 2px solid #8166FF;
+  border-radius: 20px;
+}
+.contacts__button:hover {
+  cursor: pointer;
+}
+.contacts__registration {
+  padding: 16px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 0.8rem #fff;
+  transition: text-shadow 0.5s ease;
+}
+.contacts__registration:hover {
+  cursor: pointer;
+  text-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.4rem #fff;
+}
+.contacts__question {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  background: linear-gradient(90deg, #8166FF 0%, #91B1FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.mail {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=out.css.map */
